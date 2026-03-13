@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);    
+    min-height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-row: 3 / -1;
+    
+    grid-template-columns: 1fr minmax(0, 34.375em) 1fr;
+    grid-template-areas:
+    ". f1 ."
+    ". d1 .";
+    
+    align-self: start;         
+}
+
+form {
+    grid-area: f1;
+    
+    display: flex;        
+    justify-content: center;     
+    padding-block: 1.4375em;
+}
+
+input[type="color"],
+select[name="color-schemes"]
+{
+    height: 2.625em;    
+}
+
+
+input[type="color"] {    
+    width: 3.4375em;
+    margin-right: 0.75em; 
+    background-color: #E5E5E5;
+    border: none;
+}
+
+select[name="color-schemes"]{
+    margin: 0;
+    width: 20.5em;
+    margin-right: 0.75em;
+    padding-left: 0.8125em;
+    font-size: 1rem;
+    border: 1px solid #D1D5DB;     
+}
+
+#get-color-btn {
+    width: 9.6875em;
+    font-size: 0.75rem;
+    border: none;
+    background-color: #3D4B60;
+    color: white;
+}
+
+form,
+select[name="color-schemes"],
+button[aria-label="get-color-btn"]{
+    background-color: #1F2937;  
+    color: #D5D4D8;
+}
+
+select[name="color-schemes"],
+button[aria-label="get-color-btn"]{
+    border-radius: 6px;
+}
+
+.color-wrapper {
+    grid-area: d1;
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    "c1 c2 c3 c4 c5";
+    ;
+}
+
+.color-1 {
+    grid-area: c1;
+    padding-block: 10em;
+}
+
+.color-2 {
+    grid-area: c2;    
+}
+
+.color-3 {
+    grid-area: c3;
+}
+
+.color-4 {
+    grid-area: c4;
+}
+
+.color-5 {
+    grid-area: c5;
+}

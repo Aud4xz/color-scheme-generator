@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">        
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+
+    </head>
+    <body>
+        <main>
+            <form>
+                <input type="color" id="color-picker" aria-label="color picker"></input>
+                <select name="color-schemes" aria-label="color scheme list" aria-live="polite">
+                    <option value="monochrome" selected>Monochrome </option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+                </select>
+                <button id="get-color-btn" aria-label="get-color-btn">Get color scheme</button>
+            </form>
+            
+            <div class="color-wrapper">
+                <div class="color-1"></div>
+                <div class="color-2"></div>
+                <div class="color-3"></div>
+                <div class="color-4"></div>
+                <div class="color-5"></div>
+            </div>
+        </main>   
+        <script src="index.js"></script>
+    </body>
+</html>
