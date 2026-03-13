@@ -1,9 +1,7 @@
 const colorPicker = document.getElementById("color-picker")
 const colorBtn = document.getElementById("get-color-btn")
 const form = document.querySelector("form")
-const colorScheme = document.querySelector("select")       
-            
-const block1 = document.getElementsByClassName(`block-${2}`)            
+const colorScheme = document.querySelector("select")                      
 
 form.addEventListener("submit", e => {
     e.preventDefault()
